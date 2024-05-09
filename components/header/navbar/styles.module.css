@@ -1,0 +1,28 @@
+.container {
+display: flex;
+gap: 2.5rem;
+}
+
+.container a {
+    position: relative;
+}
+
+.container a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -5%;
+    display: block;
+    width: 0%;
+    transition: all 0.7s;
+    height: 2px;
+    background-color: #ffb200;
+
+}
+
+
+.container a:hover::after {
+    width: calc(100% + 7px);
+
+
+}
