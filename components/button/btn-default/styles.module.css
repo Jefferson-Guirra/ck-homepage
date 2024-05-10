@@ -1,0 +1,10 @@
+.btn-presentation {
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #eee;
+  font-weight: bold;
+  background-color: var(--second-color);
+  box-shadow: 2px 1px 1px #89178756;
+}

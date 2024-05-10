@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import { Button } from '@/components'
 export const Presentation = () => {
   return (
     <section className={ styles.container }>
@@ -11,6 +12,8 @@ export const Presentation = () => {
           e realize seus sonhos!
         </h2>
         <p>Somos um núcleo tecnológico de aprendizado inovador para crianças, adolescentes e jovens.</p>
+        <Button.Default styleTypes='btn-presentation' text='Agende sua aula presencial' type='button' />
+
       </div>
     </section>
   )
