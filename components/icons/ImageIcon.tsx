@@ -7,7 +7,7 @@ interface Props extends ImageProps {
 
 }
 
-export const Icon = ({...props}: Props) => {
+export const ImageIcon = ({...props}: Props) => {
     const { stylesType, ...rest } = props
   return (
     <Image className={ styles[stylesType] } {...rest}/>
