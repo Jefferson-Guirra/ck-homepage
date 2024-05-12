@@ -3,6 +3,8 @@ import { FaCalendarDays } from "react-icons/fa6";
 import styles from './styles.module.css'
 import { useEffect, useState } from 'react'
 import { Button, Icon } from '@/components'
+import { BackgroundCover } from '@/components';
+
 export const Presentation = () => {
   const [active,setActive] = useState<'active' | undefined>()
   useEffect(() => {
@@ -10,7 +12,7 @@ export const Presentation = () => {
   },[])
   return (
     <section className={ styles.container }>
-      <div className={ styles.content}>
+      <article className={ styles.content}>
         <h3 className={ active ? `${styles.title}   ${styles[active]}` : styles.title }>
           O seu futuro começa hoje!
         </h3>
@@ -24,8 +26,13 @@ export const Presentation = () => {
         <Button.Default styleTypes='btn-presentation' text='Agende sua aula presencial' type='button'>
             <Icon styleType={"default"} icon={FaCalendarDays} size={23}/>
         </Button.Default>
-
-      </div>
+      </article>
+      <span className={styles.cover}></span>
+      <BackgroundCover           
+          alt='minecraft gif'
+          src='/gifs/home.gif'
+          fill
+      />
     </section>
   )
 }
