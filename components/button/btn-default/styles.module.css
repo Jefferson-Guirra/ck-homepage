@@ -10,4 +10,17 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  transition: all .4s ease;
+}
+
+.btn-presentation:hover {
+  background-color: transparent;
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+}
+.btn-presentation svg {
+  transition: all .4s ease;
+}
+.btn-presentation:hover svg {
+  fill: var(--second-color);
 }
