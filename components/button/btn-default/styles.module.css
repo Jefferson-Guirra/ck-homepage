@@ -15,21 +15,20 @@
 
 .btn-presentation:hover {
   background-color: transparent;
-  border: 2px solid var(--second-color);
-  color: var(--second-color);
+  border: 2px solid var(--primary-color);
 }
 .btn-presentation svg {
   transition: all .4s ease;
 }
 .btn-presentation:hover svg {
-  fill: var(--second-color);
+  fill: var(--primary-color);
 }
 
 
 
 @keyframes show-down {
   0%{
-    
+
   }
   
 }

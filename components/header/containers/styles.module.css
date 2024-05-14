@@ -4,14 +4,15 @@
     width: 100%;
     position: fixed;
     padding: 1.5rem 1rem;
-    background-color: rgba(128, 128, 128, 0.055);
-    backdrop-filter: blur(2px);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     padding-inline: 5rem;
     align-items: center;
-    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.103);
     font-size: 1.2rem;
+    color: #eee;
+    border-bottom: 1px solid #eeeeee17;
+    box-shadow: 1px 1px 1px #eeeeee21;
 }
 
 .logo {

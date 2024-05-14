@@ -16,7 +16,8 @@
 
 body {
   scroll-behavior: smooth;
-  padding-top: 68px;
+  padding-top: 75px;
+  background-color: var(--second-color);
 }
 
 button{
