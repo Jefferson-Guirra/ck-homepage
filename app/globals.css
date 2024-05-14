@@ -2,6 +2,7 @@
 
   --primary-color: #ffb200;
   --second-color: #891788;
+  --three-color: #6b0f6a;
 
 }
 
@@ -27,3 +28,5 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+

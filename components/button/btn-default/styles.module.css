@@ -5,7 +5,7 @@
   cursor: pointer;
   color: #eee;
   font-weight: bold;
-  background-color: var(--second-color);
+  background-color: var(--primary-color);
   box-shadow: 2px 1px 1px #89178756;
   display: flex;
   gap: 15px;
@@ -23,4 +23,13 @@
 }
 .btn-presentation:hover svg {
   fill: var(--second-color);
+}
+
+
+
+@keyframes show-down {
+  0%{
+    
+  }
+  
 }
