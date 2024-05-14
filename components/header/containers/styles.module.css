@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     padding: 1.5rem 1rem;
+    z-index: 50;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
