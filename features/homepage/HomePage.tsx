@@ -1,4 +1,5 @@
-import { HeaderContainer, Presentation } from '../../components'
+import { HeaderContainer, Presentation,   Contact } from '../../components'
+
 
 
 export const HomePage = () => {
@@ -6,6 +7,7 @@ export const HomePage = () => {
     <main>
         <HeaderContainer />
         <Presentation />
+        <Contact />
     </main>
   )
 }

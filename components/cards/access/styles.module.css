@@ -1,0 +1,172 @@
+.container {
+  height: 80vh;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+
+.svg-container {
+  width: 50%;
+}
+
+.svg-container svg{
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+.line {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  top: -30%;
+  left:50%;
+  height: 160%;
+  border: 2px dashed var(--primary-color);
+  transform: rotate(-45deg) translate3d(-30%,0,0);
+  animation: 1s show-line forwards;
+}
+
+
+.content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content h2 {
+  position: relative;
+  font-size: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.content h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(0% - 5px);
+  left: calc(0% - 5px);
+  width: 0px;
+  height: 3px;
+  background-color: var(--primary-color);
+  animation: 1s show-bar forwards;
+
+}
+
+.content h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: calc(0% - 5px);
+  right: calc(0% - 5px);
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  animation: 1s show-bar forwards .2s;
+}
+
+.cards-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.cards-container a{
+  opacity: 0;
+  transform: translate3d(0px, -50px,0);
+  border-radius: 4px;
+  display: inline-block;
+  border: 1.5px solid transparent;
+  padding: 1rem;
+  background-color: #b4b4b89d;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.651);
+
+}
+
+.cards-container a {
+  transition: all 0.7s ease;
+}
+
+
+.cards-container a:hover {
+  box-shadow: 1px 1px 1px #6b0f6a56;
+  border: 1.5px solid var(--second-color);
+}
+
+.cards-container a:nth-child(1) {
+  animation: 1s show-down forwards;
+}
+
+.cards-container a:nth-child(2) {
+  animation: 1s show-down forwards .4s;
+}
+
+.cards-container a:nth-child(3) {
+  animation: 1s show-down forwards .8s;
+}
+
+
+
+
+@keyframes show-bar {
+  to{
+    width: 40px;
+  }
+  
+}
+
+@keyframes show-move {
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  50%{
+    transform: translate3d(0,-20px,0);
+    
+  }
+  100%{
+    transform: translate3d(0,0,0);
+
+  }
+  
+}
+
+
+@keyframes floating {
+  0%{
+    transform: initial;
+  }
+
+  50%{
+    transform: translate3d(0,-15px,0);
+  }
+
+  100% {
+    transform: translate3d(0,0,0);
+  }
+}
+
+
+@keyframes show-line {
+
+to {
+  opacity: 1 ;
+}
+  
+}
+
+@keyframes show-down {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
