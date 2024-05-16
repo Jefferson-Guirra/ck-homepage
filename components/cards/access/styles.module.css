@@ -82,8 +82,7 @@
   gap: 3rem;
 }
 .cards-container a{
-  opacity: 0;
-  transform: translate3d(0px, -50px,0);
+
   border-radius: 4px;
   display: inline-block;
   border: 1.5px solid transparent;
@@ -103,9 +102,7 @@
   border: 1.5px solid var(--second-color);
 }
 
-.cards-container a:nth-child(1) {
-  animation: 1s show-down forwards;
-}
+
 
 .cards-container a:nth-child(2) {
   animation: 1s show-down forwards .4s;
