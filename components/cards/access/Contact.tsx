@@ -15,35 +15,37 @@ export const Contact = () => {
   const scrollRef2 = useRef(null)
   return (
     <section className={ styles.container} ref={scrollRef2}>
-      <MotionTranslate x={-150} margin={'-100px'}>
-        <article className={ styles['svg-container']}>
-          <ContactSvg />
-        </article>
+      <article className={ styles.box }>
+        <MotionTranslate x={-150} margin={'-100px'}>
+          <article className={ styles['svg-container']}>
+            <ContactSvg />
+          </article>
 
-      </MotionTranslate>
-      <span className={ styles.line }></span>
-      <article 
-        className={ styles.content }
-      >
-        <MotionOpacity margin="-100px">
-          <Title text="CONTATO" />
-        </MotionOpacity>
-        <article ref={scrollRef} className={styles['cards-container']}>
-          <MotionTranslate y={-50} margin="-100px">
-            <Link href={'#'} target='_blank'>
-              <Icon icon={FaInstagram} size={30} styleType='default' color='#6b0f6a'/>
-            </Link>
-          </MotionTranslate>
-          <MotionTranslate y={-50} margin="-100px" delay={0.5}>
-            <Link href={'#'} target='_blank'>
-              <Icon icon={FaWhatsapp} size={30} styleType='default' color='#6b0f6a'/>
-            </Link>
-          </MotionTranslate>
-          <MotionTranslate y={-50} margin="-100px" delay={1}>
-            <Link href={'#'} target='_blank'>
-              <Icon icon={FaFacebookSquare} size={30} styleType='default' color='#6b0f6a'/>
-            </Link>
-          </MotionTranslate>
+        </MotionTranslate>
+        <span className={ styles.line }></span>
+        <article 
+          className={ styles.content }
+        >
+          <MotionOpacity margin="-100px">
+            <Title text="CONTATO" />
+          </MotionOpacity>
+          <article ref={scrollRef} className={styles['cards-container']}>
+            <MotionTranslate y={-50} margin="-100px">
+              <Link href={'#'} target='_blank'>
+                <Icon icon={FaInstagram} size={30} styleType='default' color='#6b0f6a'/>
+              </Link>
+            </MotionTranslate>
+            <MotionTranslate y={-50} margin="-100px" delay={0.5}>
+              <Link href={'#'} target='_blank'>
+                <Icon icon={FaWhatsapp} size={30} styleType='default' color='#6b0f6a'/>
+              </Link>
+            </MotionTranslate>
+            <MotionTranslate y={-50} margin="-100px" delay={1}>
+              <Link href={'#'} target='_blank'>
+                <Icon icon={FaFacebookSquare} size={30} styleType='default' color='#6b0f6a'/>
+              </Link>
+            </MotionTranslate>
+          </article>
         </article>
       </article>
       
