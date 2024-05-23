@@ -8,3 +8,4 @@ export * from './ImageComponents/background/BackgroundCover'
 export * from './cards/access/Contact'
 export * from "./motion-components/opacity/MotionOpacity"
 export * from './motion-components/translate/MotionTranslate'
+export * from './title/Title'

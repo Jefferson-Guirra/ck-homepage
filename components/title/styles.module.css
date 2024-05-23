@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  font-size: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(0% - 5px);
+  left: calc(0% - 5px);
+  width: 0px;
+  height: 3px;
+  background-color: var(--primary-color);
+  animation: 1s show-bar forwards;
+
+}
+
+
+@keyframes show-bar {
+  to{
+    width: 40px;
+  }
+  
+}
