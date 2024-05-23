@@ -1,7 +1,7 @@
 "use client"
 import styles from "./styles.module.css"
 import ContactSvg from '../../../public/images/contact.svg'
-import { MotionOpacity, MotionTranslate } from "@/components"
+import { MotionOpacity, MotionTranslate, Title } from "@/components"
 import Link from 'next/link'
 import { Icon } from '@/components'
 import { FaInstagram } from "react-icons/fa";
@@ -26,9 +26,7 @@ export const Contact = () => {
         className={ styles.content }
       >
         <MotionOpacity margin="-100px">
-          <h2>
-            CONTATO
-          </h2>
+          <Title text="CONTATO" />
         </MotionOpacity>
         <article ref={scrollRef} className={styles['cards-container']}>
           <MotionTranslate y={-50} margin="-100px">
