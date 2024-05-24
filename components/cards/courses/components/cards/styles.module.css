@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 4rem;
+} 
+
+.container .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content .title h4 {
+
+  margin-bottom: 7px;
+}
+
+.content .title h3 {
+  font-size: 1.5rem;
+}
+.container .content p {
+  text-align: justify;
+  color: rgb(71, 70, 70);
+  line-height: 200%;
+
+}
+
+
+.container .content a {
+  background-color: var(--primary-color);
+  padding: .5rem 1rem;
+  color: #eee;
+  border-radius: 7px;
+  transition: all .7s;
+  width: fit-content;
+}
+
+.container .content a:hover {
+  background-color: var(--second-color);
+}
+
+.container .imgContainer {
+  width: 50%;
+}
+.container  .imgContainer img {
+  width: 100% !important;
+}
