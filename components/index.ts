@@ -10,3 +10,4 @@ export * from "./motion-components/opacity/MotionOpacity"
 export * from './motion-components/translate/MotionTranslate'
 export * from './title/Title'
 export * from './cards/courses/Courses'
+export * from './notice/Notice'
