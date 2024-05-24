@@ -5,7 +5,7 @@ export const Navbar = () => {
     <nav className={ styles.container }>
         <Link href={"#"}> Home </Link>
         <Link href={"#"}> Contato </Link>
-        <Link href={"#"}> Cursos </Link>
+        <Link href={"#course"}> Cursos </Link>
 
     </nav>
   )
