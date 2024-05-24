@@ -11,7 +11,7 @@ import Link from 'next/link';
 export const Contact = () => {
 
   return (
-    <section className={ styles.container} >
+    <section className={ styles.container} id='contact'>
    
       <Title text='CONTATO'/>
       <article className={ styles.content}>
