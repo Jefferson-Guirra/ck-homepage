@@ -13,9 +13,30 @@
   left: calc(0% - 5px);
   width: 0px;
   height: 3px;
+  transition: all .7s;
   background-color: var(--primary-color);
   animation: 1s show-bar forwards;
 
+}
+
+
+.title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: calc(0% - 5px);
+  right: calc(0% - 5px);
+  width: 0;
+  height: 3px;
+  transition: all .7s;
+  background-color: var(--primary-color);
+  animation: 1s show-bar forwards .2s;
+}
+
+
+.title:hover::after,
+.title:hover::before{
+  background-color: var(--second-color);
 }
 
 
