@@ -30,13 +30,16 @@
   background-color: var(--primary-color);
   padding: .5rem 1rem;
   color: #eee;
-  border-radius: 7px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #ffb3009c;
   transition: all .7s;
   width: fit-content;
 }
 
 .container .content a:hover {
   background-color: var(--second-color);
+  box-shadow: 1px 1px 1px #6b0f6a;
+
 }
 
 .container .imgContainer {
