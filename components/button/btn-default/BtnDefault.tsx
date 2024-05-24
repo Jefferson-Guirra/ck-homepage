@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react"
 import styles from './styles.module.css'
 
 export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    styleTypes: | 'default' | 'btn-presentation'
+    styleTypes: | 'default' | 'btn-presentation' | 'btn-notice'
     text: string
 
 }

@@ -24,6 +24,34 @@
   fill: var(--primary-color);
 }
 
+.btn-notice {
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #eee;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  box-shadow: 2px 1px 1px #89178756;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: all .4s ease;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-notice:hover {
+  background-color: var(--second-color);
+}
+
+.btn-notice svg {
+  transition: all .4s ease;
+}
+.btn-notice:hover svg {
+  fill: var(--primary-color);
+}
+
 
 
 @keyframes show-down {
