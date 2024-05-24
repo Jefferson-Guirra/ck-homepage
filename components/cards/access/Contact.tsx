@@ -1,54 +1,37 @@
 "use client"
 import styles from "./styles.module.css"
+import { Title } from '@/components'
 import ContactSvg from '../../../public/images/contact.svg'
-import { MotionOpacity, MotionTranslate, Title } from "@/components"
-import Link from 'next/link'
-import { Icon } from '@/components'
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { useRef } from "react"
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import Link from 'next/link';
+
 
 
 export const Contact = () => {
-  const scrollRef = useRef(null)
-  const scrollRef2 = useRef(null)
-  return (
-    <section className={ styles.container} ref={scrollRef2}>
-      <article className={ styles.box }>
-        <MotionTranslate x={-150} margin={'-100px'}>
-          <article className={ styles['svg-container']}>
-            <ContactSvg />
-          </article>
 
-        </MotionTranslate>
-        <span className={ styles.line }></span>
-        <article 
-          className={ styles.content }
-        >
-          <MotionOpacity margin="-100px">
-            <Title text="CONTATO" />
-          </MotionOpacity>
-          <article ref={scrollRef} className={styles['cards-container']}>
-            <MotionTranslate y={-50} margin="-100px">
-              <Link href={'#'} target='_blank'>
-                <Icon icon={FaInstagram} size={30} styleType='default' color='#6b0f6a'/>
-              </Link>
-            </MotionTranslate>
-            <MotionTranslate y={-50} margin="-100px" delay={0.5}>
-              <Link href={'#'} target='_blank'>
-                <Icon icon={FaWhatsapp} size={30} styleType='default' color='#6b0f6a'/>
-              </Link>
-            </MotionTranslate>
-            <MotionTranslate y={-50} margin="-100px" delay={1}>
-              <Link href={'#'} target='_blank'>
-                <Icon icon={FaFacebookSquare} size={30} styleType='default' color='#6b0f6a'/>
-              </Link>
-            </MotionTranslate>
-          </article>
+  return (
+    <section className={ styles.container} >
+   
+      <Title text='CONTATO'/>
+      <article className={ styles.content}>
+        <article className={ styles.box}>
+          <h2>
+            Estamos ansiosos para falar com você
+          </h2>
+          <p>
+          Nós adoramos ter você por perto e gostaríamos de te manter atualizado sobre tudo que fazemos por aqui.
+          </p>
+          <div className={ styles.cards }>
+            <Link href='#' ><FaWhatsapp color='#0BC71A' size={35}/></Link>
+            <Link href='#'> <FaInstagram color='#E8008D' size={35} /></Link>
+            <Link href='#'> <FaFacebook color='#3A559F' size={37} /></Link>
+            <Link href=''><MdOutlineEmail fill='#B53120' size={35}/></Link>
+
+          </div>
         </article>
+        <ContactSvg />
       </article>
-      
     </section>
   )
 }

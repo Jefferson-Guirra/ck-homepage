@@ -1,153 +1,78 @@
 .container {
-  height: 80vh;
-  background-color: #eee;
-  overflow: hidden;
+  background: #232323;
+  background: -webkit-linear-gradient(-45deg, #000000, #414141);
+  background: -o-linear-gradient(-45deg, #000000, #414141);
+  background: -moz-linear-gradient(-45deg, #000000, #414141);
+  background: linear-gradient(-45deg, #000000, #414141);
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem
 }
 
+.container h2 {
+  color: #eee !important;
+  font-size: 2.5rem;
+}
 
-.box {
-  display: flex;
-  position: relative;
+.content {
   height: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
-  padding: 3rem 5rem;
+  justify-content: center;
+  gap: 5rem;
   width: 100%;
   max-width: 1300px;
-}
-
-
-.svg-container {
-  width: 70%;
-}
-
-.svg-container svg{
-  width: 100%;
-  max-width: 500px;
-}
-
-
-
-.line {
-  position: absolute;
-  opacity: 0;
-  display: block;
-  top: -30%;
-  left:50%;
-  height: 160%;
-  border: 2px dashed var(--primary-color);
-  transform: rotate(-45deg) translate3d(-30%,0,0);
-  animation: 1s show-line forwards;
-}
-
-
-.content{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.content h2 {
-  position: relative;
-  font-size: 2rem;
-  width: fit-content;
   margin: 0 auto;
+
 }
 
+.content .box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #eee;
+}
 
-.cards-container {
-  flex: 1;
+.cards {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  width: 100%;
 }
-.cards-container a{
 
+.cards a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
-  display: inline-block;
-  border: 1.5px solid transparent;
-  padding: 1rem;
-  background-color: #b4b4b89d;
-  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.651);
-
-}
-
-.cards-container a {
-  transition: all 0.7s ease;
+  background-color: #313131; 
+  border: 1px solid rgba(128, 128, 128, 0.144);
+  transition: all .7s;
+  box-shadow: 1px 1px 1px #00000000;
 }
 
 
-.cards-container a:hover {
-  box-shadow: 1px 1px 1px #6b0f6a56;
-  border: 1.5px solid var(--second-color);
+.cards a:hover {
+  border: 1px solid rgba(128, 128, 128, 0.295);
 }
 
-
-
-.cards-container a:nth-child(2) {
-  animation: 1s show-down forwards .4s;
+.cards a svg {
+  transition: all .7s;
 }
 
-.cards-container a:nth-child(3) {
-  animation: 1s show-down forwards .8s;
+.cards a:hover svg {
+  fill: var(--primary-color);
+}
+
+.content svg {
+  width: 40%;
 }
 
 
 
-
-@keyframes show-bar {
-  to{
-    width: 40px;
-  }
-  
-}
-
-@keyframes show-move {
-  0%{
-    transform: translate3d(0,0,0);
-  }
-  50%{
-    transform: translate3d(0,-20px,0);
-    
-  }
-  100%{
-    transform: translate3d(0,0,0);
-
-  }
-  
-}
-
-
-@keyframes floating {
-  0%{
-    transform: initial;
-  }
-
-  50%{
-    transform: translate3d(0,-15px,0);
-  }
-
-  100% {
-    transform: translate3d(0,0,0);
-  }
-}
-
-
-@keyframes show-line {
-
-to {
-  opacity: 1 ;
-}
-  
-}
-
-@keyframes show-down {
-  to {
-    opacity: initial;
-    transform: initial;
-  }
-}
