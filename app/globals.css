@@ -10,12 +10,13 @@
   padding: 0px;
   box-sizing: border-box;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 
 
+
 body {
-  scroll-behavior: smooth;
   padding-top: 74px;
   background-color: var(--second-color);
 }
