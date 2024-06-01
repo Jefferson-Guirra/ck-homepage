@@ -2,15 +2,15 @@ import { ButtonHTMLAttributes } from "react"
 import styles from './styles.module.css'
 
 export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    styleTypes: | 'default' | 'btn-presentation' | 'btn-notice'
+    valuetype: | 'default' | 'btn-presentation' | 'btn-notice'
     text: string
 
 }
 
 export const BtnDefault = ({...props}: Props) => {
-    const { styleTypes, children, text } = props
+    const { valuetype, children, text } = props
   return (
-    <button className={ styles[styleTypes]}>
+    <button className={ styles[valuetype]}>
         {children}
         {text}
     </button>

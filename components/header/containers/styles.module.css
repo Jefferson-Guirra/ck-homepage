@@ -6,12 +6,11 @@
     padding: 1.5rem 1rem;
     z-index: 50;
     background-color:var(--second-color);
-
     padding-inline: 5rem;
     font-size: 1.2rem;
     color: #eee;
-    border-bottom: 1px solid #eeeeee17;
-    box-shadow: 1px 1px 1px rgb(107, 15, 106);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.062);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.178);
 
 }
 
@@ -19,7 +18,10 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
 
+.logo:hover svg {
+    fill: var(--primary-color);
 }
 
 

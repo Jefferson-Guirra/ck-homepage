@@ -34,8 +34,8 @@ export const Notice = () => {
           viewport={{ margin: '-50px' }}
           transition={{ duration: .7, delay: .2}}
         >
-          <Button.Default styleTypes='btn-notice' text='Agende sua aula presencial' type='button'>
-                <Icon styleType={"default"} icon={FaCalendarDay} size={23}/>
+          <Button.Default valuetype='btn-notice' text='Agende sua aula presencial' type='button'>
+                <Icon valuetype={"default"} icon={FaCalendarDay} size={23}/>
           </Button.Default>
         </motion.div>
       </article>

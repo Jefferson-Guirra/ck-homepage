@@ -1,4 +1,5 @@
 import { Navbar, ImageIcon  } from "../../../components"
+import { LuBrainCircuit } from "react-icons/lu";
 import styles from './styles.module.css'
 
 export const HeaderContainer = () => {
@@ -6,8 +7,8 @@ export const HeaderContainer = () => {
     <header className={ styles.container}>
         <article className={ styles.content}>
           <article className={styles.logo}>
-            <ImageIcon stylesType="header" src='/images/logo-default.png' alt="ck-icon" width={'150'} height={'150'} />
-            Código Kid
+            <LuBrainCircuit size={28}/>
+            EduTech +
           </article>
           <Navbar />
 

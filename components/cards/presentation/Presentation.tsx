@@ -17,8 +17,8 @@ export const Presentation = () => {
         <p className={ styles.title }>
           Somos um núcleo tecnológico de aprendizado inovador para crianças, adolescentes e jovens.
         </p>
-          <Button.Default styleTypes='btn-presentation' text='Agende sua aula presencial' type='button'>
-              <Icon styleType={"default"} icon={FaCalendarDays} size={23}/>
+          <Button.Default valuetype='btn-presentation' text='Agende sua aula presencial' type='button'>
+              <Icon valuetype={"default"} icon={FaCalendarDays} size={23}/>
           </Button.Default>
       </article>
       <article className={ styles.icon}>

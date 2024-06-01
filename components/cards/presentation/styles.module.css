@@ -50,15 +50,15 @@
 
 .circle {
     display: block;
-    width: 55%;
+    width: 60%;
     height: 150%;
     border-radius: 50%;
     backdrop-filter:blur(10px);
     filter: blur(3px);
     position: absolute;
-    right: -5%;
-    background: rgb(113,23,137);
-    background: radial-gradient(circle, rgba(113,23,137,1) 0%, rgba(126,23,137,1) 35%, rgba(137,23,136,1) 100%);
+    right: -10%;
+    background: rgb(3,74,96);
+    background: radial-gradient(circle, rgba(3,74,96,1) 0%, rgba(2,61,79,1) 35%, rgba(1,50,65,1) 100%);
 
 }
 

@@ -1,7 +1,10 @@
 .container {
   padding-block: 5rem;
-  background: rgb(255,175,0);
-  background: linear-gradient(90deg, rgba(255,175,0,1) 0%, rgba(255,146,1,1) 35%, rgba(255,127,0,1) 100%);
+  background: #232323;
+  background: -webkit-linear-gradient(-45deg, #000000, #414141);
+  background: -o-linear-gradient(-45deg, #000000, #414141);
+  background: -moz-linear-gradient(-45deg, #000000, #414141);
+  background: linear-gradient(-45deg, #000000, #414141);
   color: #eee;
   font-size: 2rem;
 }
