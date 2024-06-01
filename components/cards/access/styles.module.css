@@ -70,7 +70,7 @@
   fill: var(--primary-color);
 }
 
-.content svg {
+.content .container-svg {
   width: 40%;
 }
 
