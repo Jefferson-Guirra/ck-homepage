@@ -1,4 +1,4 @@
-import { Navbar, ImageIcon  } from "../../../components"
+import { Navbar, MenuMob  } from "../../../components"
 import { LuBrainCircuit } from "react-icons/lu";
 import styles from './styles.module.css'
 
@@ -11,7 +11,7 @@ export const HeaderContainer = () => {
             EduTech +
           </article>
           <Navbar />
-
+          <MenuMob />
         </article>
 
     </header>
