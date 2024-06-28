@@ -21,6 +21,7 @@
 
 .content p {
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .content a {
@@ -30,4 +31,27 @@
   width: fit-content;
   margin: 0 auto;
   border-radius: 7px;
+}
+
+
+@media (max-width: 1000px) {
+  .title h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .title h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .content button {
+    font-size: 1.1rem !important;
+  }
 }
